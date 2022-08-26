@@ -41,7 +41,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId){
-            R.id.navigation_favourites -> Toast.makeText(this,"Nav to Favs",Toast.LENGTH_SHORT).show()
+            R.id.navigation_favourites -> {
+                val navController = findNavController(R.id.nav_host_fragment_activity_main)
+                navController.navigateUp() // to clear previous navigation history
+                navController.navigate(R.id.navigation_favourites)
+            }
         }
         return super.onOptionsItemSelected(item)
     }

@@ -17,4 +17,10 @@
         android:label="@string/title_ordered"
         tools:layout="@layout/fragment_ordered_movies" />
 
+    <fragment
+        android:id="@+id/navigation_favourites"
+        android:name="com.update.multichoicemoviesapp.ui.favourites.FavouritesFragment"
+        android:label="@string/title_ordered"
+        tools:layout="@layout/fragment_favourites" />
+
 </navigation>
