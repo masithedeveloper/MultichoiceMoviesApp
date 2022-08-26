@@ -35,7 +35,7 @@ class FavouritesFragment : Fragment() {
             textView.text = it
         }
 
-        val toolbar: Toolbar = root!!.findViewById(R.id.toolbar)
+        val toolbar: Toolbar = root.findViewById(R.id.toolbar)
         //toolbar.setNavigationIcon(R.id.button)
         toolbar.setNavigationOnClickListener(View.OnClickListener { requireActivity().onBackPressed() })
 
