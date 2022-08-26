@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MultichoiceMoviesApp</string>
+    <string name="title_top_five">Top 5</string>
+    <string name="title_ordered">Release Date</string>
+</resources>
